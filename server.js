@@ -50,6 +50,7 @@ app.delete("/clients/:id",function (req, res) {
     const { id } = req.params;
     const  clientsFiltered = data.filter(client => client.id != id);
 
+    //retorna uma nova lista
     res.json(clientsFiltered);
     
 });
